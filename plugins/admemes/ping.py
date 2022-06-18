@@ -34,9 +34,9 @@ async def ping(_, message):
 async def how_to_own(_, message):
     await message.reply_text(HOW_TO_OWN)
 
-@Client.on_message(filters.command("group", COMMAND_HAND_LER) & f_onw_fliter)
-async def group(_, message):
-    await message.reply_text(GROUP)
+@Client.on_message(filters.command("4k_movies", COMMAND_HAND_LER) & f_onw_fliter)
+async def 4k_movies(_, message):
+    await message.reply_text(4K_MOVIES)
 
 
 @Client.on_message(filters.command("contact", COMMAND_HAND_LER) & f_onw_fliter)
