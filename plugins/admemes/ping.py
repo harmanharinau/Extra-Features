@@ -12,7 +12,7 @@ ALIVE = "You are not dead. You are still here. You have no love for me now. Okay
 HOW_TO_OWN = "<b>ᴡᴀᴛᴄʜ ᴛᴜᴛᴏʀɪᴀʟ ᴛᴏ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ᴍᴀᴋᴇ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ʙᴏᴛ ›› https://youtu.be/MfUjmZ1mpfc</b>"
 CONTACT = "<b>ɴᴇᴇᴅ ᴀɴʏ ʜᴇʟᴘ ᴏʀ ᴀɴʏ ᴅᴏᴜʙᴛ ᴛʜᴇɴ ᴍᴇssᴀɢᴇ ʜᴇʀᴇ</b> ›› https://t.me/cyniteOfficial</b>"
 ZSEARCHERBOT = "<b>𝙱𝙾𝚃 ›› https://t.me/zsearcherbot</b>"
-4K_MOVIES = "<b>ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ</b> ›› http://cloudmine.herokuapp.com/%5B4k_1080p_720p_Files:%5D </b>\n\n<b>( ʀᴇʟᴏᴀᴅ ᴡᴇʙsɪᴛᴇ ɪғ ɴᴏᴛ ᴏᴘᴇɴs )</b>\n\n<b>ᴜsᴇʀɴᴀᴍᴇ : A ›› ᴘᴀssᴡᴀʀᴅ : B </b>"
+4K_MOVIES = "<b>ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ</b> ›› http://cloudmine.herokuapp.com/%5B4k_1080p_720p_Files:%5D\n\n<b>( ʀᴇʟᴏᴀᴅ ᴡᴇʙsɪᴛᴇ ɪғ ɴᴏᴛ ᴏᴘᴇɴs )</b>\n\n<b>ᴜsᴇʀɴᴀᴍᴇ : A ›› ᴘᴀssᴡᴀʀᴅ : B </b>"
 # -- Constants End -- #
 
 
