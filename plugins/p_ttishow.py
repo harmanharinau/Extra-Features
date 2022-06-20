@@ -153,24 +153,22 @@ async def get_ststs(bot, message):
 
 # a function for trespassing into others groups, Inspired by a Vazha
 # Not to be used , But Just to showcase his vazhatharam.
-# from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButtonInlineKeyboardButton
-
-@Client.on_message(filters.regex(r'^Report a Problem$') | filters.command('report'))
-async def _manage(_, msg):
-    how = '**Report a Problem** \n\n'
-    how += "If something **unexpected** happens, you can report it to us. (You can also suggest features.)\n\n"
-    how += '**Steps** \n'
-    how += '1) Try whatever you did again. If it shows the same unexpected thing, move to step 2 \n'
-    how += '2) Visit @Cynitefficial and define your problem **completely**, i.e, what you expected and what happened instead.'
-    how += "If you don't get a reply, tag an admin."
-    await msg.reply(
-        how,
-        reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton('Support Group', url='https://t.me/CyniteBots')]
-        ]),
-        quote=True
-    )
+# @Client.on_message(filters.command('invite') & filters.user(ADMINS))
+async def gen_invite(bot, message):
+    if len(message.command) == 1:
+        return await message.reply('Give me a chat id')
+    chat = message.command[1]
+    try:
+        chat = int(chat)
+    except:
+        return await message.reply('Give Me A Valid Chat ID')
+    try:
+        link = await bot.create_chat_invite_link(chat)
+    except ChatAdminRequired:
+        return await message.reply("Invite Link Generation Failed, Iam Not Having Sufficient Rights")
+    except Exception as e:
+        return await message.reply(f'Error {e}')
+    await message.reply(f'Here is your Invite Link {link.invite_link}')
 
 @Client.on_message(filters.command('ban') & filters.user(ADMINS))
 async def ban_a_user(bot, message):
